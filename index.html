@@ -85,7 +85,7 @@
                 <input type="text" id="playerName" class="form-control" placeholder="Masukan Nama Kamu" />
             </div>
             <div class="d-flex justify-content-center gap-3">
-                <button id="goToGame" class="btn btn-primary">Mulai Game</button>
+                <button id="gamePage" class="btn btn-primary">Mulai Game</button>
                 <button id="howToPlay" class="btn btn-secondary">Tata Cara Bermain</button>
             </div>
         </section>
@@ -102,7 +102,7 @@
     <script>
         $(document).ready(function() {
             // Tombol Mulai Game
-            $('#goToGame').click(function() {
+            $('#gamePage').click(function() {
                 const playerName = $('#playerName').val().trim();
                 localStorage.setItem('playerName', playerName || 'Tamu');
                 window.location.href = 'gamePage.html';
